@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chatbox Demo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="chatbox-icon">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+            >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M19 3h-14c-1.1 0-2 .9-2 2v14l4-4h12c1.1 0 2-.9 2-2v-6c0-1.1-.9-2-2-2zm0 12h-3l-3 3v-3h-4v-10h14v10zm-9-9h2v2h-2v-2zm0 4h2v6h-2v-6zm4 0h2v6h-2v-6zm0-4h2v2h-2v-2z"
+                />
+            </svg>
+        </div>
+
+        <div id="chatbox-content">
+            <div class="chatbox-header">
+                <span>Chatbox</span>
+                <svg
+                    id="close-button"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M7 7l10 10M17 7l-10 10"
+                        stroke="#000"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            </div>
+            <div class="chatbox-body">
+                <p class="response-message">Welcome to the chatbox!</p>
+            </div>
+            <div class="chatbox-input">
+                <input
+                    type="text"
+                    id="user-input"
+                    placeholder="Type your message"
+                />
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+    <script src="terms.js"></script>
+</html>
